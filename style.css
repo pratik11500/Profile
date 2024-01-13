@@ -65,7 +65,7 @@ a.nav-link {
   margin: 2px;
   padding: 5px 10px;
   text-decoration: none;
-  color: var(--main-fonts-color);
+  color: #ffffff;
   font-family: var(--main-font-family);
   cursor: pointer;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ h3 {
   background-color: #302f32;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 6px #9c3ef9, 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
   text-align: center;
   position: relative;
 }
@@ -291,8 +291,8 @@ h3 {
 .neon-button {
   display: inline-block;
   padding: 8px 18px;
-  background-color: #9c3ef9;
-  box-shadow: 0 0 6px #9c3ef9, 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
+  background-color: none;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -305,6 +305,12 @@ h3 {
   transition: background-color 0.3s;
 }
 
+
+neon-button:hover {
+  background-color: #9c3ef9;
+  box-shadow: 0 0 6px #9c3ef9 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
+  color: #000000;
+}
 
 
 footer {
