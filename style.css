@@ -78,7 +78,7 @@ a.nav-link {
 }
 
 .nav-link:hover {
-  color: #255784;
+  color: #ffffff;
   background: #9c3ef9;
   box-shadow: 0 0 6px #9c3ef9, 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
 }
