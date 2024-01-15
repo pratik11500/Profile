@@ -1,3 +1,4 @@
+
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap';
 
 :root {
@@ -228,7 +229,7 @@ h3 {
     display: inline-block;
     padding: 5px 10px;
     margin: 40px 0;
-    color: #000;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
@@ -237,12 +238,12 @@ h3 {
 }
 
 .work-content a:hover {
-    background: #000;;
-    color: #fff;
-    box-shadow: 0 0 5px #000;,
-        0 0 25px #000;,
-        0 0 50px #000;,
-        0 0 200px #000;;
+    background: #000000;;
+    color: #ffffff;
+    box-shadow: 0 0 5px #000000;,
+        0 0 25px #000000;,
+        0 0 50px #000000;,
+        0 0 200px #000000;
 }
 
 .work-content a:nth-child(1) {
@@ -263,7 +264,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #000;);
+    background: linear-gradient(90deg, transparent, #000000;);
     animation: animate1 1s linear infinite;
 }
 
@@ -284,7 +285,7 @@ h3 {
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,
-            transparent, #000;);
+            transparent, #000000;);
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
@@ -305,7 +306,7 @@ h3 {
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #000;);
+    background: linear-gradient(270deg, transparent, #000000;);
     animation: animate3 1s linear infinite;
     animation-delay: 0.50s;
 }
@@ -327,7 +328,7 @@ h3 {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #000;);
+    background: linear-gradient(360deg, transparent, #000000;);
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
