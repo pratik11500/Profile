@@ -190,10 +190,10 @@ h3 {
   flex-direction: column;
   margin: 20px;
   width: 300px;
-  height: 250px;
-  border-radius: 12px;
+  height: 300px;
+  border-radius: 12px 12px 30px 30px;
   background: #9c3ef9;
-  box-shadow: 0 0 6px #9c3ef9, 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 
 .card video {
@@ -221,6 +221,127 @@ h3 {
 
 .card:hover {
   box-shadow: 0 0 1.5rem gray
+}
+
+.work-content a {
+    float: right;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 40px 0;
+    color: #9c3ef9;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.work-content a:hover {
+    background: #9c3ef9;
+    color: #050801;
+    box-shadow: 0 0 5px #9c3ef9,
+        0 0 25px #9c3ef9,
+        0 0 50px #9c3ef9,
+        0 0 200px #9c3ef9;
+}
+
+.work-content a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.box-content a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.work-content a span {
+    position: absolute;
+    display: block;
+}
+
+.work-content a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #9c3ef9);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.work-content a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            transparent, #9c3ef9);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.work-content a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #9c3ef9);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+.work-content a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #9c3ef9);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
 }
 
 #contact {
@@ -348,6 +469,41 @@ hr {
   margin-inline-start: auto;
   margin-inline-end: auto
 }
+
+
+/* Warning popup styles */
+.warning-popup {
+  width: 20%;
+  height: auto;
+  font-size: 2rem;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  font-family: system-ui ;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 0 5px #ff0000, 0 0 25px #ff0000, 0 0 50px #ff0000, 0 0 200px #ff0000;
+  padding: 10px;
+  border: 5px solid #fff;
+  text-shadow: 0 0 6px #ff0000, 0 0 35px #ff0000, 0 0 10px #ff0000;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 9999;
+  animation: shake 0.4s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+
+
 
 
 ::-webkit-scrollbar {
