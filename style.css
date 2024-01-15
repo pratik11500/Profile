@@ -225,7 +225,7 @@ h3 {
 }
 
 .work-content a {
-    top-20px
+    top: -20px;
     position: relative;
     display: inline-block;
     padding: 10px 15px;
