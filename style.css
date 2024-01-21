@@ -471,6 +471,54 @@ hr {
 }
 
 
+
+/* Loader */
+
+.loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .loader-bar {
+      width: 300px;
+      height: 20px;
+      background-color: #000;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px #00f7ff;
+    }
+
+    .filling-water {
+      width: 0;
+      height: 100%;
+      background-color: #00f7ff;
+      animation: fillWater 5s linear forwards;
+    }
+
+    @keyframes fillWater {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .loading-text {
+      color: #00f7ff;
+      font-size: 24px;
+      margin-top: 20px;
+      font-family: Monospace;
+    }
+
+
+
+
 /* Warning popup styles */
 .warning-popup {
   width: 20%;
