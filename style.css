@@ -81,6 +81,7 @@ a.nav-link {
   color: #ffffff;
   background: #9c3ef9;
   box-shadow: 0 0 6px #9c3ef9, 0 0 35px #9c3ef9, 0 0 10px #9c3ef9;
+  transation: 0.2s;
 }
 
 #home {
@@ -224,8 +225,9 @@ h3 {
 }
 
 .redirect-btn {
-    width : 90px;
-    height: 50px;
+    top: -20px;
+    width: 70px;
+    height: 30px;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
