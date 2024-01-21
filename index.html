@@ -125,11 +125,7 @@
                 <div class="work-content"><strong>Strategic Combat</strong>
                   <br> <p>Attack and Defense Tips</p>
               
-                  <a href="https://pratik11500.github.io/Skills/" target="_blank">
-              <span></span><span></span>
-              <span></span><span></span>
-              Visit
-          </a>
+                  <button id="redirect-btn1" class="redirect-btn"> Visit </button>
                 </div>
             </div>
 
@@ -140,11 +136,7 @@
                 <div class="work-content"><strong>Lifestyle Hub</strong>
                   <br><p> Make your life more better </p>   
                
-                  <a href="https://pratik11500.github.io/life/" target="_blank">
-              <span></span><span></span>
-              <span></span><span></span>
-              Visit
-          </a>
+                  <button id="redirect-btn2" class="redirect-btn"> Visit </button>
                 </div>
             </div>
 
@@ -155,11 +147,7 @@
                 <div class="work-content"><strong>Travelify Tour</strong>
                   <br><p> Tour and Travel </p>
                
-                  <a href="https://pratik11500.github.io/tour/" target="_blank">
-              <span></span><span></span>
-              <span></span><span></span>
-              Visit
-          </a>
+                  <button id="redirect-btn3" class="redirect-btn"> Visit </button>
                 </div>
             </div>
 
@@ -171,15 +159,53 @@
                 <div class="work-content"><strong>Apex</strong>
                   <br> <p> An Ai Bot </p>
                  
-                  <a href="https://pratik11500.github.io/Apex/" target="_blank">
-              <span></span><span></span>
-              <span></span><span></span>
-              Visit
-          </a>
+                  <button id="redirect-btn4" class="redirect-btn"> Visit </button>
                 </div>
             </div> 
 
+<script>
+  	function redirectToWebsite(url) {
+      // Hide all content
+      document.body.innerHTML = "";
 
+      // Display loader
+      var loaderContainer = document.createElement("div");
+      loaderContainer.className = "loader-container";
+      var loaderBar = document.createElement("div");
+      loaderBar.className = "loader-bar";
+      var fillingWater = document.createElement("div");
+      fillingWater.className = "filling-water";
+      var loadingText = document.createElement("p");
+      loadingText.className = "loading-text";
+      loadingText.innerText = "Loading...";
+
+      loaderBar.appendChild(fillingWater);
+      loaderContainer.appendChild(loaderBar);
+      loaderContainer.appendChild(loadingText);
+      document.body.appendChild(loaderContainer);
+
+      // Redirect after 5 seconds
+      setTimeout(function() {
+        window.location.href = url;
+      }, 5000);
+    }
+
+    document.getElementById("redirect-btn1").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/Skills/", "_blank");
+    });
+
+    document.getElementById("redirect-btn2").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/life/", "_blank");
+    });
+
+    document.getElementById("redirect-btn3").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/tour/", "_blank");
+    });
+
+    document.getElementById("redirect-btn4").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/Apex/", "_blank");
+    });
+  </script>
 
    </div>
             </div>
