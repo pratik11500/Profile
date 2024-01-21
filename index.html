@@ -168,6 +168,9 @@
       // Hide all content
       document.body.innerHTML = "";
 
+      //On new page
+      window.open(url, "_blank");
+
       // Display loader
       var loaderContainer = document.createElement("div");
       loaderContainer.className = "loader-container";
