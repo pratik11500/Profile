@@ -130,41 +130,6 @@
             </div>
 
 
-            <script>
-  	function redirectToWebsite(url) {
-      // Hide all content
-      document.body.innerHTML = "";
-
-      // Display loader
-      var loaderContainer = document.createElement("div");
-      loaderContainer.className = "loader-container1";
-      var loaderBar = document.createElement("div");
-      loaderBar.className = "loader-bar1";
-      var fillingWater = document.createElement("div");
-      fillingWater.className = "filling-water1";
-      var loadingText = document.createElement("p");
-      loadingText.className = "loading-text1";
-      loadingText.innerText = "Loading...";
-
-      loaderBar.appendChild(fillingWater);
-      loaderContainer.appendChild(loaderBar);
-      loaderContainer.appendChild(loadingText);
-      document.body.appendChild(loaderContainer);
-
-      // Redirect after 5 seconds
-      setTimeout(function() {
-        window.location.href = url;
-      }, 5000);
-    }
-
-    document.getElementById("redirect-btn1").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/Skills/", "_blank");
-    });
-  </script>
-
-
-            
-
             <div class="card">
               <img class="work-img"
                 src="https://media.discordapp.net/attachments/1190976910264639538/1191107203113943142/Untitled_video_-_Made_with_Clipchamp.gif?ex=65a43c06&is=6591c706&hm=681d854c41ff1cbb898c7420525864a0de27ef3f7d0c34db6ca5001982e459fc&=&width=754&height=425">
@@ -176,41 +141,6 @@
                 </div>
             </div>
 
-
-            <script>
-  	function redirectToWebsite(url) {
-      // Hide all content
-      document.body.innerHTML = "";
-
-      // Display loader
-      var loaderContainer = document.createElement("div");
-      loaderContainer.className = "loader-container2";
-      var loaderBar = document.createElement("div");
-      loaderBar.className = "loader-bar2";
-      var fillingWater = document.createElement("div");
-      fillingWater.className = "filling-water2";
-      var loadingText = document.createElement("p");
-      loadingText.className = "loading-text2";
-      loadingText.innerText = "Loading...";
-
-      loaderBar.appendChild(fillingWater);
-      loaderContainer.appendChild(loaderBar);
-      loaderContainer.appendChild(loadingText);
-      document.body.appendChild(loaderContainer);
-
-      // Redirect after 5 seconds
-      setTimeout(function() {
-        window.location.href = url;
-      }, 5000);
-    }
-
-    document.getElementById("redirect-btn2").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/life/", "_blank");
-    });
-  </script>
-
-            
-
             <div class="card">
               <img class="work-img"
                 src="https://media.discordapp.net/attachments/1188903621279096913/1189836647550947348/20231228131403.gif?ex=659f9cba&is=658d27ba&hm=59d5a76af352d554550034478f20e2bacb3be5ee93cb325c078d864843258076&=">
@@ -221,39 +151,6 @@
                   <button id="redirect-btn3" class="redirect-btn"> Visit </button>
                 </div>
             </div>
-
-
-            <script>
-  	function redirectToWebsite(url) {
-      // Hide all content
-      document.body.innerHTML = "";
-
-      // Display loader
-      var loaderContainer = document.createElement("div");
-      loaderContainer.className = "loader-container3";
-      var loaderBar = document.createElement("div");
-      loaderBar.className = "loader-bar3";
-      var fillingWater = document.createElement("div");
-      fillingWater.className = "filling-water3";
-      var loadingText = document.createElement("p");
-      loadingText.className = "loading-text3";
-      loadingText.innerText = "Loading...";
-
-      loaderBar.appendChild(fillingWater);
-      loaderContainer.appendChild(loaderBar);
-      loaderContainer.appendChild(loadingText);
-      document.body.appendChild(loaderContainer);
-
-      // Redirect after 5 seconds
-      setTimeout(function() {
-        window.location.href = url;
-      }, 5000);
-    }
-
-    document.getElementById("redirect-btn3").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/tour/", "_blank");
-    });
-  </script>
 
 
             <div class="card">
@@ -293,6 +190,19 @@
       }, 5000);
     }
 
+  
+    document.getElementById("redirect-btn1").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/Skills/", "_blank");
+    });
+
+  document.getElementById("redirect-btn2").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/life/", "_blank");
+    });
+
+
+  document.getElementById("redirect-btn3").addEventListener("click", function() {
+      redirectToWebsite("https://pratik11500.github.io/tour/", "_blank");
+    });
   
     document.getElementById("redirect-btn4").addEventListener("click", function() {
       redirectToWebsite("https://pratik11500.github.io/Apex/", "_blank");
