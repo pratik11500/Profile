@@ -63,4 +63,3 @@ document.addEventListener('keydown', function (e) {
   ;
 updateVisitorCount();
 
-vvvvvvvvvvvvvvvvvvvvv
