@@ -408,52 +408,6 @@ hr {
 
 
 
-/* Loader */
-
-.loading-text {
-      color: #00f7ff;
-      font-size: 24px;
-      margin-top: 20px;
-      font-family: Monospace;
-    }
-
-.loader-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #000;
-}
-
-.loader-bar {
-  width: 300px;
-  height: 20px;
-  background-color: #000;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px #00f7ff;
-}
-
-.filling-water {
-  width: 0;
-  height: 100%;
-  background-color: #00f7ff;
-  animation: fillWater 5s linear forwards;
-}
-
-@keyframes fillWater {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-
-
 /* Warning popup styles */
 .warning-popup {
   width: 20%;
@@ -538,18 +492,6 @@ hr {
   to {
     opacity: 1;
     transform: translatex(0px)
-  }
-}
-
-@media only screen and (max-width: 1484px) and (min-width:1214px) {
-  .work {
-    padding: 20px 20%
-  }
-}
-
-@media only screen and (max-width: 1214px) and (min-width:1000px) {
-  .work {
-    padding: 20px 12%
   }
 }
 
