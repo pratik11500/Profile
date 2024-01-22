@@ -111,106 +111,49 @@
       </div>
 
       <div id="projects">
-        <h3>My Projects</h3>
-        <hr>
-        <p>Here are some of the Websites that I manage.
-        </p>
-        <div class="work-box">
-          <div class="work">
-
-            <div class="card">
-              <img class="work-img"
-                src="https://media.discordapp.net/attachments/1188903656020529212/1189835118819409990/20231228124032.gif?ex=659f9b4e&is=658d264e&hm=5ffc7be5d634297a43e2b3dfe008a44af1f2aec4f56ca11a71ee735b41bd3210&=">
-
-                <div class="work-content"><strong>Strategic Combat</strong>
-                  <br> <p>Attack and Defense Tips</p>
-              
-                  <button id="redirect-btn1" class="redirect-btn"> Visit </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-              <img class="work-img"
-                src="https://media.discordapp.net/attachments/1190976910264639538/1191107203113943142/Untitled_video_-_Made_with_Clipchamp.gif?ex=65a43c06&is=6591c706&hm=681d854c41ff1cbb898c7420525864a0de27ef3f7d0c34db6ca5001982e459fc&=&width=754&height=425">
-
-                <div class="work-content"><strong>Lifestyle Hub</strong>
-                  <br><p> Make your life more better </p>   
-               
-                  <button id="redirect-btn2" class="redirect-btn"> Visit </button>
-                </div>
-            </div>
-
-            <div class="card">
-              <img class="work-img"
-                src="https://media.discordapp.net/attachments/1188903621279096913/1189836647550947348/20231228131403.gif?ex=659f9cba&is=658d27ba&hm=59d5a76af352d554550034478f20e2bacb3be5ee93cb325c078d864843258076&=">
-
-                <div class="work-content"><strong>Travelify Tour</strong>
-                  <br><p> Tour and Travel </p>
-               
-                  <button id="redirect-btn3" class="redirect-btn"> Visit </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-              <img class="work-img" src="https://media.discordapp.net/attachments/1189177024070295552/1196706123055648858/Apex_1.gif?ex=65b89a6d&is=65a6256d&hm=71e857d8f53bb46c12a79c51653a0d3c7c83cdc794ce242bd8b8f8420d51bb5c&=">
-
-                <div class="work-content"><strong>Apex</strong>
-                  <br> <p> An Ai Bot </p>
-                 
-                  <button id="redirect-btn4" class="redirect-btn"> Visit </button>
-                </div>
-            </div> 
-
-<script>
-  	function redirectToWebsite(url) {
-      // Hide all content
-      document.body.innerHTML = "";
-
-      // Display loader
-      var loaderContainer = document.createElement("div");
-      loaderContainer.className = "loader-container";
-      var loaderBar = document.createElement("div");
-      loaderBar.className = "loader-bar";
-      var fillingWater = document.createElement("div");
-      fillingWater.className = "filling-water";
-      var loadingText = document.createElement("p");
-      loadingText.className = "loading-text";
-      loadingText.innerText = "Loading...";
-
-      loaderBar.appendChild(fillingWater);
-      loaderContainer.appendChild(loaderBar);
-      loaderContainer.appendChild(loadingText);
-      document.body.appendChild(loaderContainer);
-
-      // Redirect after 5 seconds
-      setTimeout(function() {
-        window.location.href = url;
-      }, 5000);
-      
-    }
-
+        
+        <div class="box-container">
   
-  document.getElementById("redirect-btn1").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/Skills/", "_blank");
-    });
-
-  document.getElementById("redirect-btn2").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/life/", "_blank");
-    });
-
-
-  document.getElementById("redirect-btn3").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/tour/", "_blank");
-    });
+  <h3> Projects </h3>
+  <hr>
   
-    document.getElementById("redirect-btn4").addEventListener("click", function() {
-      redirectToWebsite("https://pratik11500.github.io/Apex/", "_blank");
-    });
-  </script>
-
-   </div>
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1188903656020529212/1189835118819409990/20231228124032.gif?ex=659f9b4e&is=658d264e&hm=5ffc7be5d634297a43e2b3dfe008a44af1f2aec4f56ca11a71ee735b41bd3210&=" alt="Project 4" class="work-img">
+      <div class="work-content">
+        <h2>Strategic Combat</h2>
+        <p>This webpage is dedicated to teaching and enhancing combat skills. It may include tutorials, videos, and articles covering various martial arts and self-defense techniques. Users can find valuable information on improving their fighting abilities, from basic moves to advanced strategies.</p>
+        <a href="https://pratik11500.github.io/Skills/" target="_blank"  class="redirect-btn">Explore</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1190976910264639538/1191107203113943142/Untitled_video_-_Made_with_Clipchamp.gif?ex=65a43c06&is=6591c706&hm=681d854c41ff1cbb898c7420525864a0de27ef3f7d0c34db6ca5001982e459fc&=&width=754&height=425" alt="Project 4" class="work-img">
+      <div class="work-content">
+        <h2>Lifestyle Hub</h2>
+        <p>A comprehensive platform for life advice and tips, this webpage covers a wide range of topics to help users improve various aspects of their lives. It could include articles on personal development, productivity, relationships, health, and more. The goal is to provide practical insights and actionable tips for a well-rounded and fulfilling life.</p>
+        <a href="https://pratik11500.github.io/life/" target="_blank"  class="redirect-btn">Explore</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1188903621279096913/1189836647550947348/20231228131403.gif?ex=659f9cba&is=658d27ba&hm=59d5a76af352d554550034478f20e2bacb3be5ee93cb325c078d864843258076&=" alt="Project 4" class="work-img">
+      <div class="work-content">
+        <h2>Travelify Tour</h2>
+        <p>This webpage serves as a travel hub, offering a variety of information related to tourism and travel. Visitors can explore travel guides, itineraries, and tips for different destinations. The site might feature beautiful visuals, travel stories, and practical advice to help users plan and enjoy their journeys.</p>
+        <a href="https://pratik11500.github.io/tour/" target="_blank"  class="redirect-btn">Explore</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1189177024070295552/1196706123055648858/Apex_1.gif?ex=65b89a6d&is=65a6256d&hm=71e857d8f53bb46c12a79c51653a0d3c7c83cdc794ce242bd8b8f8420d51bb5c&=" alt="Project 4" class="work-img">
+      <div class="work-content">
+        <h2>Ai-Bot Apex</h2>
+        <p>This webpage introduces an AI-driven chatbot named "Apex Talking Bot." Users can interact with the bot to get assistance on various topics. The AI might provide information, answer questions, and offer support. The page could highlight the capabilities of the bot, its applications, and how users can leverage it for different tasks. Additionally, it may feature a user-friendly interface for seamless interactions.</p>
+        <a href="https://pratik11500.github.io/Apex/" target="_blank" class="redirect-btn">Explore</a>
+      </div>
+    </div>
+    
+  </div>
             </div>
 
             
