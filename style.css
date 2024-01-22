@@ -177,72 +177,53 @@ h3 {
   padding: 10px
 }
 
-.work {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  width: 300px;
-  height: 300px;
-  border-radius: 12px 12px 30px 30px;
-  background: #9c3ef9;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
-}
-
-.card img {
-  width: 100%;
-  height: 70%;
-  border-radius: 12px 12px 0 0;
-}
-
-.card .work-content {
-  text-align: center;
-  padding: 10px 5px;
-  font-size: 15px;
-  color: var(--main-fonts-color);
-  font-family: var(--main-font-family);
-  cursor: pointer
-}
-
-.card a {
-  text-decoration: none
-}
-
-.card .work-content:hover {
-  color: #ffffff
-}
-
-.card:hover {
-  box-shadow: 0 0 1.5rem gray
-}
-
-.redirect-btn {
-    margin-top: -50px;
-    width: 70px;
-    height: 30px;
-    font-size: 20px;
+.box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      width: 100%;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      background: #000;
+    }
+    .work-content h2 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .work-content p {
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    
+    .redirect-btn {
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      font-size: 20px;
     font-weight: 600;
-    color: #fff;
     cursor: pointer;
-    margin: 20px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
-    border-radius: 5px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    text-decoration: none;
 }
 
 .redirect-btn:hover {
@@ -256,7 +237,48 @@ h3 {
 .bredirect-btn:focus {
     outline: none;
 }
+    
+    .work-img {
+      width: 60%; /* Fixed size for PC and tablet view */
+      height: auto;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    .work-content {
+      margin-left: 20px; /* Adjusted margin to create space between image and content */
+      flex-grow: 1; /* Allow content to take available space */
+    }
 
+    @media (max-width: 767px) {
+      /* Mobile view */
+      .card {
+        flex-direction: column;
+        box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+      }
+      .card img {
+      width: 90%;
+      height: auto;
+        margin-top: 0;
+      }
+      .work-content {
+        margin-left: 0; /* Reset margin for mobile view */
+      }
+      .redirect-btn {
+        margin-top: 10px; /* Add space between content and button */
+      }
+    }
+
+    @media (min-width: 768px) {
+      /* Tablet and PC view */
+      .card:nth-child(odd) {
+        flex-direction: row-reverse; /* Image on the right for 1st and 3rd box */
+        text-align: left; /* Text align right for 1st and 3rd box */
+      }
+      .card:nth-child(even) {
+        text-align: right; /* Text align left for 2nd and 4th box */
+      }
+    }
+    
 
 #contact {
   margin: auto;
