@@ -1,3 +1,4 @@
+<!----
 <!DOCTYPE html>
 <html>
 
@@ -5,9 +6,9 @@
   <meta charset="utf-8">
  <meta name="google-site-verification" content="iN2EalERsLAhwTyfSVM8y2Tt7dOxVivFnMIsEaZfeLk" />
   <meta name="viewport" content="width=device-width">
-  <title>Pratik's Portfolio
+  <title>Error 404
   </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="#.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="icon"
@@ -34,7 +35,126 @@
   </script>
 </head>
 
+<body>   
+---->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            text-align: center;
+        }
+        .code {
+            font-size: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .zero {
+            position: relative;
+        }
+        .face {
+            font-size: 50px;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+        .message {
+            font-size: 24px;
+            margin-top: -20px;
+        }
+        
+        @keyframes twinkle {
+            0%, 20%, 50%, 80%, 100% {
+                opacity: 0.5;
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shooting-star {
+            0% {
+                top: -10%;
+                left: 50%;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                left: 100%;
+                opacity: 0;
+            }
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        .star:nth-child(2) { top: 10%; left: 20%; animation-delay: -2s; }
+        .star:nth-child(3) { top: 40%; left: 50%; animation-delay: -4s; }
+        .star:nth-child(4) { top: 60%; left: 70%; animation-delay: -6s; }
+        .star:nth-child(5) { top: 80%; left: 30%; animation-delay: -8s; }
+        .star:nth-child(6) { top: 50%; left: 20%; animation-delay: -10s; }
+        .star:nth-child(7) { top: 20%; left: 80%; animation-delay: -12s; }
+
+        .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: shooting-star 3s infinite ease-in-out;
+        }
+
+        .shooting-star:nth-child(2) { animation-delay: -15s; }
+        .shooting-star:nth-child(3) { animation-delay: -30s; }
+    </style>
+</head>
 <body>
+    <div class="container">
+        <div class="code">
+            4
+            <div class="zero">
+                0
+                <div class="face"></div>
+            </div>
+            4
+        </div>
+        <div class="message">page not found</div>
+    </div>
+    
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+  <!----
+
   <div class="container">
 
     <header>
@@ -220,3 +340,4 @@
     </footer>
   </div>
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+--->
